@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:not(i){
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(24, 12, 73);
+}
+
+.container{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 570px;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 1rem;
+    box-shadow: 0 0 1000px 10px rgba(241, 237, 237, 0.295);
+}
+
+#head1{
+
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(12, 12, 65, 0.726);
+    font-size: 17px;
+}
+
+.search-box #mic{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color:  rgba(24, 19, 92, 0.877);
+    font-size: 30px;
+    outline: none;
+}
+
+
+.search-box #search-btn{
+    height: 50px;
+    width: 120px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color:  rgba(24, 19, 92, 0.877);
+    outline: none;
+    border:  none;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.result{
+    position: relative;
+}
+
+.result h3{
+    font-size: 30px;
+}
+
+.result .word{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.result button{
+    background: transparent;
+    border: none;
+    color:  rgba(24, 19, 92, 0.877);
+    font-size: 20px;
+    outline: none;
+}
+
+.details{
+    display: flex;
+    gap: 10px;
+    color: rgb(73, 73, 73);
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+}
+
+.word-meaning{
+    color: black;
+}
+
+.word-example{
+    color: black;
+    font-style: italic;
+    border-left: 5px solid rgba(24, 19, 92, 0.7);
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+#error{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(255, 45, 45);
+    font-size: 20px
+}
+
+#sound{
+    cursor: pointer;
+}
+
+#read-more{
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: rgba(24, 19, 92, 0.877);
+    border-radius: 0.5rem;
+}
