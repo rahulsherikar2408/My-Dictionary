@@ -24,10 +24,6 @@ body{
     box-shadow: 0 0 1000px 10px rgba(241, 237, 237, 0.295);
 }
 
-#head1{
-
-}
-
 .search-box{
     width: 100%;
     display: flex;
