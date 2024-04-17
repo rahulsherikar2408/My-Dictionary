@@ -26,7 +26,13 @@ function voiceEnable() {
         recognition.start();
         recognition.onresult = event => {
             let text = event.results[event.results.length - 1][0].transcript;
-            word.value = text.substring(0, text.length - 1);
+            let str = text;
+            if(str[str.length - 1] == "."){
+                word.value = str.substring(0, str.length - 1);
+            }
+            else{
+                word.value = str;
+            }
             navigator.mediaDevices.getUserMedia({ audio: true });
         }
         on = false;
